@@ -1,0 +1,24 @@
+{
+  "name": "tracker",
+  "version": "1.0.0",
+  "description": "Tracks stats ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cardinelli/Tracker.git"
+  },
+  "author": "Nugo Kvachadze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cardinelli/Tracker/issues"
+  },
+  "homepage": "https://github.com/Cardinelli/Tracker#readme",
+  "devDependencies": {
+    "nodeman": "^1.1.2",
+    "nodemon": "^1.19.1"
+  }
+}
