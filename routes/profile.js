@@ -2,11 +2,10 @@ const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
 
-
 router.get('/:platform/:gamertag', async (req, res) => {
     try {
         const headers = {
-            'TRN-Api-Key' : process.env.TRACKER_API_KEY
+            'TRN-Api-Key': process.env.TRACKER_API_KEY
         }
 
         const {platform, gamertag} = req.params;
@@ -26,7 +25,7 @@ router.get('/:platform/:gamertag', async (req, res) => {
 
 
         res.json(data);
-     }catch (err) {
+    } catch (err) {
         console.error(err);
         res.status(500).json({
             message: 'server Error'
