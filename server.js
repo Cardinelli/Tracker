@@ -12,8 +12,6 @@ const app = express();
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
-
-
 // Profile routes
 
 app.use('/api/v1/profile', require('./routes/profile'));
